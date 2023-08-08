@@ -27,3 +27,11 @@ std::string Autor::getGenero (){
 std::string Autor::getNacionalidade (){
     return this->nacionalidade;
 }
+
+void Autor::imprimirInformacoes ()
+{
+    std::cout << "Autor: " << this->getNome () <<std::endl;
+    std::cout << "Data de nascimento: " << this->getDataNascimento().dia << "/" << this->getDataNascimento().mes << "/"<< this->getDataNascimento().ano <<std::endl;
+    std::cout << "Genero: " << this->getGenero ()<<std::endl;
+    std::cout << "Nacionalidade: " << this->getNacionalidade ()<<std::endl;
+}

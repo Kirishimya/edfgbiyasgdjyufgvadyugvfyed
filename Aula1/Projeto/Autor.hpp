@@ -20,6 +20,7 @@ class Autor
         Data getDataNascimento ();
         std::string getGenero ();
         std::string getNacionalidade ();
+        void imprimirInformacoes ();
 };
 
 #endif

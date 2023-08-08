@@ -41,3 +41,13 @@ size_t Livro::getNumeroDePaginas ()
 {
     return this->numeroDePaginas;
 }
+void Livro::imprimirInformacoes ()
+{
+    std::cout <<"*Informações do livro\n";
+    std::cout << "Titulo: " << this->getTitulo ()<<std::endl;
+    std::cout << "Informações do autor:" << std::endl;
+    this->getAutor ().imprimirInformacoes ();
+    std::cout << "Ano de publicação:" << this->getAnoDePublicacao ()<<std::endl;
+    std::cout << "Numero de edição: " << this->getNumeroDeEdicao ()<<std::endl;
+    std::cout << "Numero de páginas: " << this->getNumeroDePaginas ()<<std::endl;
+}

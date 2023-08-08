@@ -22,6 +22,7 @@ class Livro
         size_t getAnoDePublicacao ();
         size_t getNumeroDeEdicao ();
         size_t getNumeroDePaginas ();
+        void imprimirInformacoes ();
 };
 
 #endif

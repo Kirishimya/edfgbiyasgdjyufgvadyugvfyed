@@ -5,26 +5,25 @@
 #include "Livro.hpp"
 #include "Revista.hpp"
 
-void imprimirInformacoes (Autor a);
-void imprimirInformacoes (Cliente a);
-void imprimirInformacoes (Livro a);
-void imprimirInformacoes (Revista a);
-
-void imprimirInformacoes (Autor *a)
+template <typename T>
+void imprimirInformacoes (T *a)
 {
     a->imprimirInformacoes();
 }
-void imprimirInformacoes (Cliente *a)
+template <typename T>
+void imprimirInformacoes (T a)
+{
+    a.imprimirInformacoes();
+}
+template <typename T>
+void getTitulo (T *a)
 {
     a->imprimirInformacoes();
 }
-void imprimirInformacoes (Livro *a)
+template <typename T>
+void getTitulo (T a)
 {
-    a->imprimirInformacoes();
-}
-void imprimirInformacoes (Revista *a)
-{
-    a->imprimirInformacoes();
+    a.getTitulo();
 }
 
 #endif

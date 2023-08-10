@@ -75,12 +75,6 @@ Cliente* Revista::getUltimoCliente ()
 }
 Revista::~Revista ()
 {
-    static int antidoublefree = 1;
-    
-    if(antidoublefree)
-    {
-        std::cout << "Chamei destrutor rwevista\n"; 
-        delete this->ultimoCliente;
-    }
-    antidoublefree = 0;
+    //std::cout << "Chamei destrutor rwevista\n"; 
+    delete this->ultimoCliente; 
 }

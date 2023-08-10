@@ -76,12 +76,6 @@ Cliente* Livro::getUltimoCliente ()
 }
 Livro::~Livro ()
 {
-    static int antidoublefree = 1;
-    
-    if(antidoublefree)
-    {
-        std::cout << "Chamei destrutor livro\n"; 
-        delete this->ultimoCliente;
-    }
-    antidoublefree = 0;
+    //std::cout << "Chamei destrutor livro\n"; 
+    delete this->ultimoCliente;
 }

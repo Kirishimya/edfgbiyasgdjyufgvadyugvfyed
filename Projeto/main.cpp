@@ -3,7 +3,7 @@
 #include "Revista.hpp"
 #include "Cliente.hpp"
 #include "FuncUteis.hpp"
-
+//g++ Autor.cpp Biblioteca.hpp Cliente.cpp FuncUteis.hpp ItemAcervo.hpp Livro.cpp LivroDidatico.cpp Revista.cpp Util.hpp
 int main ()
 {
     Autor autor;

@@ -4,6 +4,7 @@
 #include "Cliente.hpp"
 #include "Livro.hpp"
 #include "Revista.hpp"
+#include "LivroDidatico.hpp"
 
 template <typename T>
 void imprimirInformacoes (T *a)
